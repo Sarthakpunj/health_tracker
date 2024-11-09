@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMU Fitness Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>University Fitness Tracker</h1>
+    <div class="goal-section">
+      <h2>Set Your Daily Goal by Sarthak Punj 21BDS0115</h2>
+      <input type="number" id="goalInput" placeholder="Steps">
+      <button onclick="setGoal()">Set Goal</button>
+      <p id="goalMessage"></p>
+    </div>
+    
+    <div class="activity-section">
+      <h2>Track Activities</h2>
+      <button onclick="trackActivity('walking')">Walking</button>
+      <button onclick="trackActivity('running')">Running</button>
+      <button onclick="trackActivity('cycling')">Cycling</button>
+      <button onclick="trackActivity('exercise')">Exercise</button>
+    </div>
+
+    <div class="metrics-section">
+      <h2>Fitness Metrics</h2>
+      <p><strong>Steps Taken:</strong> <span id="steps">0</span></p>
+      <p><strong>Calories Burned:</strong> <span id="calories">0</span></p>
+      <p><strong>Current Activity:</strong> <span id="currentActivity">None</span></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
